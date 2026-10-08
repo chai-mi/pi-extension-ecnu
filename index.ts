@@ -18,7 +18,7 @@ export default function (pi: ExtensionAPI) {
     models: [
       {
         id: "ecnu-max",
-        name: "Deepseek V4 Flash",
+        name: "Deepseek V4.1 Flash",
         reasoning: true,
         thinkingLevelMap: {
           minimal: null,
@@ -28,7 +28,7 @@ export default function (pi: ExtensionAPI) {
           xhigh: null,
           max: "max",
         },
-        input: ["text"],
+        input: ["text", "image"],
         cost: { input: 300, output: 1200, cacheRead: 60, cacheWrite: 0 },
         contextWindow: 512 * 1024,
         maxTokens: 384 * 1024,
@@ -44,7 +44,7 @@ export default function (pi: ExtensionAPI) {
       },
       {
         id: "ecnu-plus",
-        name: "Qwen3.8 27B",
+        name: "Qwen3.8 Flash Next",
         reasoning: true,
         thinkingLevelMap: {
           minimal: null,
