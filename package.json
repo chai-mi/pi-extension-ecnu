@@ -1,11 +1,19 @@
 {
   "name": "pi-extension-ecnu",
-  "private": true,
   "version": "1.0.0",
+  "private": true,
+  "license": "MIT",
   "type": "module",
+  "scripts": {
+    "fmt": "oxfmt",
+    "lint": "oxlint"
+  },
   "devDependencies": {
-    "@earendil-works/pi-ai": "^1.0.0",
-    "@earendil-works/pi-coding-agent": "^1.0.0"
+    "@earendil-works/pi-ai": "^1.2.0",
+    "@earendil-works/pi-coding-agent": "^1.2.0",
+    "@types/node": "^26.6.5",
+    "oxfmt": "^0.73.0",
+    "oxlint": "^1.88.0"
   },
   "peerDependencies": {
     "@earendil-works/pi-ai": "*",
